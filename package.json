@@ -51,7 +51,7 @@
     "minilog": "3.1.0",
     "pathfinding": "^0.4.18",
     "schema-utils": "^2.7.1",
-    "scratch-parser": "git+https://github.com/PenguinMod/PenguinMod-Parser.git#master",
+    "scratch-parser": "github:wycats/PenguinMod-Parser#wycats-main",
     "scratch-sb1-converter": "0.2.7",
     "scratch-translate-extension-languages": "0.0.20191118205314",
     "simplex-noise": "^4.0.1",
@@ -63,7 +63,7 @@
     "worker-loader": "^1.1.1"
   },
   "peerDependencies": {
-    "scratch-svg-renderer": "github:PenguinMod/penguinmod-svg-renderer#develop"
+    "scratch-svg-renderer": "github:wycats/penguinmod-svg-renderer#wycats-main"
   },
   "devDependencies": {
     "@babel/core": "7.13.10",
@@ -86,12 +86,12 @@
     "lodash.defaultsdeep": "4.6.1",
     "pngjs": "3.3.3",
     "scratch-audio": "0.1.0-prerelease.20200528195344",
-    "scratch-blocks": "git+https://github.com/PenguinMod/PenguinMod-Blocks.git#develop-builds",
+    "scratch-blocks": "github:wycats/PenguinMod-Blocks#wycats-main",
     "scratch-l10n": "3.14.20220526031602",
-    "scratch-render": "github:PenguinMod/penguinmod-render#develop",
-    "scratch-render-fonts": "github:PenguinMod/penguinmod-render-fonts#master",
-    "scratch-storage": "git+https://github.com/PenguinMod/PenguinMod-Storage.git#develop",
-    "scratch-svg-renderer": "github:PenguinMod/penguinmod-svg-renderer#develop",
+    "scratch-render": "github:wycats/penguinmod-render#wycats-main",
+    "scratch-render-fonts": "github:wycats/penguinmod-render-fonts#wycats-main",
+    "scratch-storage": "github:wycats/PenguinMod-Storage#wycats-main",
+    "scratch-svg-renderer": "github:wycats/penguinmod-svg-renderer#wycats-main",
     "script-loader": "0.7.2",
     "stats.js": "0.17.0",
     "tap": "12.0.1",
