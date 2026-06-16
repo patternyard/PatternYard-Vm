@@ -64,7 +64,7 @@ class JgScratchAuthenticateBlocks {
                     disableMonitor: true,
                     hideFromPalette: true,
                     arguments: {
-                        NAME: { type: ArgumentType.STRING, defaultValue: "PenguinMod" }
+                        NAME: { type: ArgumentType.STRING, defaultValue: "PatternYard" }
                     },
                     blockType: BlockType.REPORTER
                 },
@@ -182,8 +182,8 @@ class JgScratchAuthenticateBlocks {
         nameSplit.pop();
         const projectName = Cast.toString(nameSplit.join(" - "));
         return [
-            projectName === 'PenguinMod' ? 'Project' : projectName,
-            'PenguinMod',
+            projectName === 'PatternYard' ? 'Project' : projectName,
+            'PatternYard',
             'Game',
         ];
     }
