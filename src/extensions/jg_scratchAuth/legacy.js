@@ -14,7 +14,7 @@ const authenticate = (thisObject, args) => {
         const sanitizedName = encodeURIComponent(String(args.NAME).substring(0, 256).replace(/[^a-zA-Z0-9 _-]+/gmi, "_"));
         const waitingLink = `${window.location.origin}/wait.html`;
         const login = window.open(
-            `https://auth.itinerary.eu.org/auth/?redirect=${btoa(waitingLink)}&name=${sanitizedName.length > 0 ? sanitizedName : "PenguinMod"}`,
+            `https://auth.itinerary.eu.org/auth/?redirect=${btoa(waitingLink)}&name=${sanitizedName.length > 0 ? sanitizedName : "PatternYard"}`,
             "Scratch Authentication",
             `scrollbars=yes,resizable=yes,status=no,location=yes,toolbar=no,menubar=no,width=768,height=512,left=200,top=200`
         );

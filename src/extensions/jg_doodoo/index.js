@@ -95,7 +95,7 @@ class JgDooDooBlocks {
                 },
                 {
                     opcode: 'visualReportbad',
-                    text: 'give me admin on PenguinMod',
+                    text: 'give me admin on PatternYard',
                     blockType: BlockType.COMMAND
                 },
                 '---',
