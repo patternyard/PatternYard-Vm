@@ -26,7 +26,7 @@ jobs:
         with:
           token: ${{ secrets.t }}
           event-type: update
-          repository: PenguinMod/PenguinMod-Packager
+          repository: patternyard/PatternYard-Packager
       
       - uses: actions/setup-node@v3
         with:
