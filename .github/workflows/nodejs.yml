@@ -18,13 +18,13 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v2.0.1
         with:
-          token: ${{ secrets.t }}
+          token: ${{ secrets.DISPATCH_TOKEN }}
           event-type: update
           repository: patternyard/PatternYard-Home
       - name: Repository Dispatch2
         uses: peter-evans/repository-dispatch@v2.0.1
         with:
-          token: ${{ secrets.t }}
+          token: ${{ secrets.DISPATCH_TOKEN }}
           event-type: update
           repository: patternyard/PatternYard-Packager
       
