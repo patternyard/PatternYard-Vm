@@ -284,7 +284,7 @@ class canvas {
                         },
                         src: {
                             type: ArgumentType.STRING,
-                            defaultValue: 'https://studio.penguinmod.com/favicon.ico'
+                            defaultValue: 'https://studio.patternyard.dev/favicon.ico'
                         }
                     },
                     blockType: BlockType.COMMAND

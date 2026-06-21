@@ -477,10 +477,10 @@ class ExtensionManager {
             throw new Error(`Invalid extension URL: ${extensionURL}`);
         }
 
-        if (extensionURL.includes("penguinmod.site")) {
-            alert("Extensions using penguinmod.site are deprecated, please swap them over to use penguinmod.com instead.")
+        if (extensionURL.includes("penguinmod.site") || extensionURL.includes("penguinmod.com")) {
+            alert("Extensions using penguinmod.site or penguinmod.com are deprecated, please swap them over to use patternyard.dev instead.")
         }
-        const normalURL = extensionURL.replace("penguinmod.site", "penguinmod.com");
+        const normalURL = extensionURL.replace("penguinmod.site", "patternyard.dev").replace("penguinmod.com", "patternyard.dev");
 
         this.runtime.setExternalCommunicationMethod('customExtensions', true);
 
