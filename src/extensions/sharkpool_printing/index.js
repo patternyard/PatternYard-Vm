@@ -90,7 +90,7 @@ class sharkpoolPrinting {
                     arguments: {
                         IMG: {
                             type: ArgumentType.STRING,
-                            defaultValue: "https://penguinmod.com/favicon.png"
+                            defaultValue: "https://patternyard.dev/favicon.png"
                         }
                     },
                 },
@@ -222,7 +222,7 @@ class sharkpoolPrinting {
                     arguments: {
                         IMG: {
                             type: ArgumentType.STRING,
-                            defaultValue: "https://penguinmod.com/test.png"
+                            defaultValue: "https://patternyard.dev/test.png"
                         }
                     },
                 },
@@ -337,7 +337,7 @@ class sharkpoolPrinting {
         let url = args.IMG;
         const canFetch = await this.runtime.vm.securityManager.canFetch(url);
         if (!canFetch) {
-            url = 'https://penguinmod.com/notallowed.png';
+            url = 'https://patternyard.dev/notallowed.png';
         }
         this.prepare(xmlEscape(url), "img");
     }

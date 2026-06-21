@@ -75,8 +75,8 @@ class JgBestExtensionBlocks {
 
         const video = document.createElement("video");
         video.style = 'width: 100%; height: 100%; z-index: 10000; position: absolute; left: 0; top: 0;';
-        video.innerHTML = '<source src="https://penguinmod.com/bx-tv1.mp4" type="video/mp4">'
-            + '<source src="https://penguinmod.com/vr/themes/selection.mp3" type="audio/mpeg">';
+        video.innerHTML = '<source src="https://patternyard.dev/bx-tv1.mp4" type="video/mp4">'
+            + '<source src="https://patternyard.dev/vr/themes/selection.mp3" type="audio/mpeg">';
         this.videoElement = video;
         canvas.parentElement.appendChild(video);
 

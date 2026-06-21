@@ -51,7 +51,7 @@ class JgScratchAuthenticateBlocks {
             color2: '#ff8C00',
             blockIconURI: Icon,
             // TODO: docs doesnt exist, make some docs
-            // docsURI: 'https://docs.penguinmod.com/extensions/scratch-auth',
+            // docsURI: 'https://docs.patternyard.dev/extensions/scratch-auth',
             blocks: [
                 // LEGACY BLOCK
                 {
@@ -213,7 +213,7 @@ class JgScratchAuthenticateBlocks {
 
         const loginLocation = Cast.toString(args.NAME);
         const sanitizedName = encodeURIComponent(loginLocation.substring(0, 256).replace(/[^a-zA-Z0-9 _\-\.\[\]\(\)]+/gmi, ""));
-        const waitingLink = `https://studio.penguinmod.com/scratchAuthExt.html?openLocation=${encodeURIComponent(window.origin)}`;
+        const waitingLink = `https://studio.patternyard.dev/scratchAuthExt.html?openLocation=${encodeURIComponent(window.origin)}`;
 
         // listen for events before opening
         let login;
@@ -273,7 +273,7 @@ class JgScratchAuthenticateBlocks {
         return code;
     }
     serverRedirectLocation() {
-        const waitingLink = `https://studio.penguinmod.com/scratchAuthExt.html?openLocation=${window.origin}`;
+        const waitingLink = `https://studio.patternyard.dev/scratchAuthExt.html?openLocation=${window.origin}`;
         return waitingLink;
     }
     getPromptStatus(args) {

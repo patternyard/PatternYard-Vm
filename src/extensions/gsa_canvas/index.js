@@ -14,7 +14,7 @@ const sanitize = string => {
     }
     return JSON.stringify(string).slice(1, -1);
 };
-const DefaultDrawImage = 'https://studio.penguinmod.com/favicon.ico'; 
+const DefaultDrawImage = 'https://studio.patternyard.dev/favicon.ico';
 const canvasPropInfos = [
     ['compositing method', 'globalCompositeOperation', [
         ['source over', 'source-over'],

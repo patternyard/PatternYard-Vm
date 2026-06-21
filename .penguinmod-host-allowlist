@@ -7,25 +7,7 @@
 **/*.md
 **/*.mdx
 
-# --- Baseline-seeded (2026-06-20) ---------------------------------------------
-# These files already carried upstream hosts from upstream engine code at
-# rollout time. Allowlisting them keeps the guard green today AND lets future
-# upstream merges into wycats-main land here without breaking CI. The guard
-# still fails on NEW host refs in any other (patternyard) file. This list
-# doubles as the known upstream-host debt inventory for this repo.
-.github/workflows/nodejs.yml
-src/compiler/jsgen.js
-src/engine/runtime.js
+# Migration/rewrite tooling: this shim DETECTS legacy upstream extension URLs
+# (penguinmod.site / penguinmod.com) at load time and rewrites them to
+# patternyard.dev. It must reference the upstream host literally to match it.
 src/extension-support/extension-manager.js
-src/extensions/gsa_canvas/index.js
-src/extensions/gsa_canvas_old/index.js
-src/extensions/gsa_objectVars/index.js
-src/extensions/jg_bestextensioin/index.js
-src/extensions/jg_runtime/index.js
-src/extensions/jg_scratchAuth/index.js
-src/extensions/jg_storage/index.js
-src/extensions/jwScope/index.js
-src/extensions/pm_sensingExpansion/index.js
-src/extensions/sharkpool_printing/index.js
-src/serialization/sb3.js
-src/virtual-machine.js

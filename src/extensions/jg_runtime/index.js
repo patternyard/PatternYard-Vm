@@ -62,7 +62,7 @@ class JgRuntimeBlocks {
                     arguments: {
                         URL: {
                             type: ArgumentType.STRING,
-                            defaultValue: `https://corsproxy.io/?${encodeURIComponent('https://penguinmod.com/Sprite1.pms')}`
+                            defaultValue: `https://corsproxy.io/?${encodeURIComponent('https://patternyard.dev/Sprite1.pms')}`
                         }
                     },
                     switches: [
@@ -81,7 +81,7 @@ class JgRuntimeBlocks {
                     arguments: {
                         URL: {
                             type: ArgumentType.STRING,
-                            defaultValue: `https://corsproxy.io/?${encodeURIComponent('https://penguinmod.com/navicon.png')}`
+                            defaultValue: `https://corsproxy.io/?${encodeURIComponent('https://patternyard.dev/navicon.png')}`
                         },
                         name: {
                             type: ArgumentType.STRING,
@@ -113,7 +113,7 @@ class JgRuntimeBlocks {
                         },
                         URL: {
                             type: ArgumentType.STRING,
-                            defaultValue: `https://corsproxy.io/?${encodeURIComponent('https://penguinmod.com/navicon.png')}`
+                            defaultValue: `https://corsproxy.io/?${encodeURIComponent('https://patternyard.dev/navicon.png')}`
                         },
                         name: {
                             type: ArgumentType.STRING,

@@ -41,7 +41,7 @@ class JgStorageBlocks {
          */
         this.runtime = runtime;
 
-        this.currentServer = "https://storage-ext.penguinmod.com/";
+        this.currentServer = "https://storage.patternyard.dev/";
         this.usePenguinMod = true;
         this.useGlobal = true;
         this.waitingForResponse = false;
@@ -67,7 +67,7 @@ class JgStorageBlocks {
             name: 'Storage',
             color1: '#76A8FE',
             color2: '#538EFC',
-            docsURI: 'https://docs.penguinmod.com/extensions/storage',
+            docsURI: 'https://docs.patternyard.dev/extensions/storage',
             blocks: [
                 {
                     blockType: BlockType.LABEL,
@@ -385,7 +385,7 @@ class JgStorageBlocks {
     }
 
     getCurrentServer() {
-        return `https://storage-ext.penguinmod.com/`
+        return `https://storage.patternyard.dev/`
     }
 
     // blocks
@@ -462,7 +462,7 @@ class JgStorageBlocks {
         const serverType = Cast.toString(args.SERVER).toLowerCase();
         if (["project", "global"].includes(serverType)) {
             // this is a menu option
-            this.currentServer = "https://storage-ext.penguinmod.com/";
+            this.currentServer = "https://storage.patternyard.dev/";
             this.usePenguinMod = true;
             this.useGlobal = serverType === "global";
         } else {

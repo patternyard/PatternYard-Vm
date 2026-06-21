@@ -34,7 +34,7 @@ const {exportCostume} = require('./serialization/tw-costume-import-export');
 const Base64Util = require('./util/base64-util');
 
 const RESERVED_NAMES = ['_mouse_', '_stage_', '_edge_', '_myself_', '_random_'];
-const PM_LIBRARY_API = "https://library.penguinmod.com/";
+const PM_LIBRARY_API = "https://library.patternyard.dev/";
 
 const IRGenerator = require('./compiler/irgen');
 const JSGenerator = require('./compiler/jsgen');

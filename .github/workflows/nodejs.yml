@@ -20,13 +20,13 @@ jobs:
         with:
           token: ${{ secrets.t }}
           event-type: update
-          repository: PenguinMod/penguinmod.github.io
+          repository: patternyard/PatternYard-Home
       - name: Repository Dispatch2
         uses: peter-evans/repository-dispatch@v2.0.1
         with:
           token: ${{ secrets.t }}
           event-type: update
-          repository: PenguinMod/PenguinMod-Packager
+          repository: patternyard/PatternYard-Packager
       
       - uses: actions/setup-node@v3
         with:
