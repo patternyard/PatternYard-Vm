@@ -15,16 +15,26 @@ jobs:
   ping-pong:
     runs-on: ubuntu-latest
     steps:
+      - name: Generate dispatch token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.DISPATCH_APP_ID }}
+          private-key: ${{ secrets.DISPATCH_APP_PRIVATE_KEY }}
+          owner: patternyard
+          repositories: |
+            PatternYard-Home
+            PatternYard-Packager
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v2.0.1
         with:
-          token: ${{ secrets.t }}
+          token: ${{ steps.app-token.outputs.token }}
           event-type: update
           repository: patternyard/PatternYard-Home
       - name: Repository Dispatch2
         uses: peter-evans/repository-dispatch@v2.0.1
         with:
-          token: ${{ secrets.t }}
+          token: ${{ steps.app-token.outputs.token }}
           event-type: update
           repository: patternyard/PatternYard-Packager
       
